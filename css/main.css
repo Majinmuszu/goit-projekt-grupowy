@@ -1,6 +1,7 @@
 body {
   margin: 0;
 }
+
 h1,
 h2,
 h3,
@@ -9,13 +10,16 @@ p,
 ul {
   margin: 0;
 }
+
 ul {
   list-style: none;
   padding: 0;
 }
+
 a {
   text-decoration: none;
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -23,15 +27,17 @@ img {
 }
 
 .section-contacts {
-  background: url(images/contacts_mobile_background.png);
+  background: url(../images/contacts_mobile_background.png);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   background-color: #111518;
 }
+
 .contacts {
   padding: 50px 20px;
 }
+
 .contacts__title {
   font-family: Montserrat;
   font-style: normal;
@@ -43,6 +49,7 @@ img {
   color: #ffffff;
   margin-bottom: 50px;
 }
+
 .contacts__title--accent {
   color: #ff6b09;
 }
@@ -58,6 +65,7 @@ img {
   color: #ffffff;
   margin-bottom: 30px;
 }
+
 .contacts__text--accent {
   color: #ff6b09;
 }
@@ -70,15 +78,35 @@ img {
   background-color: #00000000;
   border: 1px solid #ffffff;
   outline: none;
+  color: #fff;
+}
+
+.contact-form__input::-moz-placeholder {
+  color: #ffffff;
+  padding-left: 28px;
+}
+
+.contact-form__input:-ms-input-placeholder {
+  color: #ffffff;
+  padding-left: 28px;
 }
 
 .contact-form__input::placeholder {
-    color: #ffffff;
-    padding-left: 28px;
+  color: #ffffff;
+  padding-left: 28px;
 }
+
+.contact-form__input:not(:-moz-placeholder-shown):required:invalid {
+  border-color: red;
+}
+
+.contact-form__input:not(:-ms-input-placeholder):required:invalid {
+  border-color: red;
+}
+
 .contact-form__input:not(:placeholder-shown):required:invalid {
-    border-color: red;
-  }
+  border-color: red;
+}
 
 .contact-form__button {
   width: 260px;
@@ -105,9 +133,11 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .footer-list__item:last-child {
   margin-top: 30px;
 }
+
 .footer-list__item:nth-child(2) {
   margin-top: 20px;
   font-family: Montserrat;
@@ -116,25 +146,33 @@ img {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.08em;
+}
+
+.footer-list__link {
   color: #111518;
 }
-.footer-list__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.footer-list__link--insta {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url(/instagram.svg);
 }
+
 .icon__phone {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .copyright {
   color: #b9b9b9;
+  font-size: 14px;
+  line-height: 2;
 }
+
 .copyright__background {
   background-color: #111518;
   width: 100%;
   height: 70px;
-  padding-left: 52px;
   padding-top: 21px;
-  text-align: left;
-}
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
